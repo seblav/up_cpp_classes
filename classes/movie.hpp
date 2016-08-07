@@ -10,9 +10,6 @@
 #define movie_hpp
 
 #include <stdio.h>
-
-#endif /* movie_hpp */
-
 #include <string>
 using namespace std;
 
@@ -33,8 +30,12 @@ public:
     //Accessor
     string getName();
     int getYear();
-    int getRating;
+    int getRating();
     
     //Mutator
-    
+    void setName(string);
+    void setYear(int);
+    void setRating(int);
 };
+
+#endif /* movie_hpp */
